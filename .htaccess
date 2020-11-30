@@ -1,0 +1,23 @@
+RewriteEngine on
+
+RewriteRule ^home$ index.php?module=home [L]
+RewriteRule ^profil-kami\.html$ index.php?module=home&id=$1 [L]
+RewriteRule ^lokasi-kami\.html$ index.php?module=lokasikami&id=$1 [L]
+RewriteRule ^simpan-temp\.html$ index.php?module=simpantemp&id=$1 [L]
+RewriteRule ^lihat-(.*)\.html$ index.php?module=lihatdetail&id=$1 [L]
+RewriteRule ^login-pemilik(.*)\.html$ index.php?module=loginpemilik&id=$1 [L]
+RewriteRule ^daftar-pemilik(.*)\.html$ index.php?module=daftarpemilik&id=$1 [L]
+RewriteRule ^panel-pemilik(.*)\.html$ index.php?module=panelpemilik&id=$1 [L]
+RewriteRule ^profil-pemilik(.*)\.html$ index.php?module=profilpemilik&id=$1 [L]
+RewriteRule ^logout-pemilik(.*)\.html$ index.php?module=logoutpemilik&id=$1 [L]
+RewriteRule ^tambah-kost(.*)\.html$ index.php?module=tambahkost&id=$1 [L]
+RewriteRule ^editkosan(.*)\.html$ index.php?module=editkosan&id=$1 [L]
+RewriteRule ^detailkosan(.*)\.html$ index.php?module=detailkos&id=$1 [L]
+RewriteRule ^detailfasilitas(.*)\.html$ index.php?module=detailfasilitas&id=$1 [L]
+RewriteRule ^pesan-kamar(.*)\.html$ index.php?module=pesankamar&id=$1 [L]
+RewriteRule ^cari-kategori(.*)\.html$ index.php?module=carikategori&id=$1 [L]
+RewriteRule ^hasil(.*)\.html$ index.php?module=hasilspk&id=$1 [L]
+RewriteRule ^histori(.*)\.html$ index.php?module=histori&id=$1 [L]
+RewriteRule ^histohasil(.*)\.html$ index.php?module=histohasil&id=$1 [L]
+ErrorDocument 404 /404/404.html
+Options All -Indexes
